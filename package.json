@@ -1,0 +1,28 @@
+{
+  "name": "inventory-assistant",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@elevenlabs/client": "^1.37.1",
+    "@elevenlabs/elevenlabs-js": "^2.79.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "firebase": "^13.4.0",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.44",
+    "vue-router": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.6",
+    "vue-tsc": "^3.3.14"
+  }
+}
