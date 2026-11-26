@@ -145,7 +145,7 @@ onBeforeUnmount(() => {
                 </p>
 
                 <RouterLink
-                    :to="{ name: 'dashboard' }"
+                    :to="{ name: 'admin' }"
                     exact-active-class="bg-blue-500/15 text-white ring-1 ring-blue-400/20 ring-inset"
                     class="group flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
                 >

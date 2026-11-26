@@ -4,6 +4,7 @@ import { sessionIsActive } from '../features/auth/useAuth.ts'
 
 import DashboardLayout from '../layouts/DashboardLayout.vue'
 import LoginView from '../views/auth/LoginView.vue'
+import DashboardView from '../views/dashboard/DashboardView.vue'
 import ConversationView from '../views/dashboard/ConversationView.vue'
 import OrderView from '../views/dashboard/OrderView.vue'
 
@@ -31,6 +32,11 @@ const router = createRouter({
         requiresAuth: true,
       },
       children: [
+        {
+          path: '',
+          name: 'admin',
+          component: DashboardView,
+        },
         {
           path: '/conversation',
           name: 'conversation',
