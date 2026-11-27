@@ -20,7 +20,7 @@ function handleSubmit() {
 
     LogIn(credentials.username, credentials.password)
         .then(() => {
-            router.push({ name: 'dashboard' });
+            router.push({ name: 'admin' });
         })
         .catch((error) => {
             console.error('Login failed:', error);
@@ -30,7 +30,7 @@ function handleSubmit() {
 </script>
 
 <template>
-    <div class="flex min-h-dvh w-full items-center justify-center px-4 py-8 sm:px-6">
+    <div class="flex min-h-dvh w-full items-center justify-center px-4 py-8 sm:px-6 bg-linear-to-b from-slate-900 to-blue-600 bg-fixed">
         <div class="w-full max-w-[20rem] rounded-2xl border border-white/20 bg-white/15 p-5 text-white shadow-xl backdrop-blur-md sm:max-w-sm sm:p-8 md:max-w-md lg:max-w-lg lg:p-10 xl:max-w-xl xl:p-12">
             <h1 class="text-center text-xl font-bold sm:text-2xl lg:text-3xl">Login</h1>
 

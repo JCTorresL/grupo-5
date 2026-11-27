@@ -23,7 +23,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="voice-wrapper">
-        <elevenlabs-convai agent-id="agent_6401m830z5atf5dtww9arwpqf1yb"></elevenlabs-convai>
+    <div>
+        <elevenlabs-convai agent-id="agent_6401m830z5atf5dtww9arwpqf1yb" placement="bottom-left" variant="compact" mobile-fullscreen="false"></elevenlabs-convai>
     </div>
 </template>
+
+<style scoped>
+elevenlabs-convai {
+    position: absolute;
+    inset: 0 3.5rem 0 0;
+    z-index: 1;
+    --el-overlay-padding: 0.5rem;
+}
+</style>
